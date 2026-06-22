@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ayamuo - 個人開発プロジェクト一覧</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#13171f; --line:#232a38; --ink:#e6ecf5; --sub:#8a96ad; --accent:#5ad1ff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI","Hiragino Sans",system-ui,sans-serif}
+  #wrap{max-width:780px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:22px;margin:0 0 6px;letter-spacing:.02em}
+  .sub{color:var(--sub);font-size:13px;margin:0 0 40px;line-height:1.7}
+  .grid{display:flex;flex-direction:column;gap:14px}
+  a.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px;text-decoration:none;color:var(--ink);transition:.15s;}
+  a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+  .card .name{font-size:16px;font-weight:700;margin-bottom:4px}
+  .card .desc{font-size:13px;color:var(--sub);line-height:1.6}
+  .card .tag{display:inline-block;font-size:10px;color:var(--accent);letter-spacing:.08em;
+    border:1px solid rgba(90,209,255,.4);border-radius:4px;padding:2px 7px;margin-bottom:8px}
+  footer{margin-top:60px;font-size:11px;color:var(--sub);text-align:center}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>ayamuo</h1>
+  <p class="sub">個人開発で作っているアプリ・ツール・ゲームをまとめています。<br>各プロジェクトの詳細は下記リンクからご覧いただけます。</p>
+  <div class="grid">
+    <a class="card" href="https://ayamuo.github.io/fractal-war/">
+      <div class="tag">BROWSER GAME</div>
+      <div class="name">FRACTAL WAR</div>
+      <div class="desc">戦略シミュレーション×見下ろし型シューティングのブラウザゲーム。SF宇宙戦をテーマにした開発中のプロトタイプです。</div>
+    </a>
+    <a class="card" href="https://ayamuo.github.io/gurumemory/">
+      <div class="tag">ANDROID APP</div>
+      <div class="name">ぐるめもりー</div>
+      <div class="desc">完全オフラインで使える食事記録アプリ。写真付きで料理を記録し、カレンダーや地図で振り返ることができます。</div>
+    </a>
+    <a class="card" href="https://ayamuo.github.io/muryotaisugame/">
+      <div class="tag">ANDROID APP</div>
+      <div class="name">無量大数ゲーム</div>
+      <div class="desc">スマートフォン向けのカジュアルゲーム。アカウント登録不要、シンプルに遊べる作品です。</div>
+    </a>
+    <a class="card" href="https://ayamuo.github.io/hajimete-nisa/">
+      <div class="tag">WEB TOOL</div>
+      <div class="name">はじめてのNISA</div>
+      <div class="desc">3つの質問に答えるだけで、自分に合ったNISAの始め方がわかる初心者向け診断ツールです。</div>
+    </a>
+  </div>
+  <footer>© ayamuo</footer>
+</div>
+</body>
+</html>
