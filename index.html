@@ -10,10 +10,10 @@
   }
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:"Segoe UI","Hiragino Sans",system-ui,sans-serif}
+    font-family:"Segoe UI","Hiragino Sans",system-ui,sans-serif;line-height:1.7}
   #wrap{max-width:780px;margin:0 auto;padding:48px 20px 80px}
   h1{font-size:22px;margin:0 0 6px;letter-spacing:.02em}
-  .sub{color:var(--sub);font-size:13px;margin:0 0 40px;line-height:1.7}
+  .sub{color:var(--sub);font-size:13px;margin:0 0 40px;line-height:1.8}
   .grid{display:flex;flex-direction:column;gap:14px}
   a.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
     padding:18px 20px;text-decoration:none;color:var(--ink);transition:.15s;}
@@ -22,7 +22,12 @@
   .card .desc{font-size:13px;color:var(--sub);line-height:1.6}
   .card .tag{display:inline-block;font-size:10px;color:var(--accent);letter-spacing:.08em;
     border:1px solid rgba(90,209,255,.4);border-radius:4px;padding:2px 7px;margin-bottom:8px}
-  footer{margin-top:60px;font-size:11px;color:var(--sub);text-align:center}
+  .about{margin-top:52px;padding-top:36px;border-top:1px solid var(--line)}
+  .about h2{font-size:13px;color:var(--accent);margin:0 0 12px;letter-spacing:.06em}
+  .about p{font-size:13px;color:var(--sub);margin:0 0 10px}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:11px;color:var(--sub);text-align:center}
+  footer a{color:var(--sub);text-decoration:none}
+  footer a:hover{color:var(--accent)}
 </style>
 </head>
 <body>
@@ -51,7 +56,16 @@
       <div class="desc">3つの質問に答えるだけで、自分に合ったNISAの始め方がわかる初心者向け診断ツールです。</div>
     </a>
   </div>
-  <footer>© ayamuo</footer>
+  <div class="about">
+    <h2>ABOUT</h2>
+    <p>個人開発者 ayamuo のプロジェクト一覧ページです。ブラウザゲーム・Androidアプリ・Webツールをひとりで企画・設計・実装しています。</p>
+    <p>ゲームはブラウザ上で動作するHTML5製で、インストール不要・無料でお楽しみいただけます。Androidアプリは Google Play にて配信中です。</p>
+    <p>各プロジェクトはフィードバックをもとに継続的にアップデートしています。気になる点・ご要望はGitHubのIssueよりお気軽にどうぞ。</p>
+  </div>
+
+  <footer>
+    <a href="/privacy.html">プライバシーポリシー</a>　|　© ayamuo
+  </footer>
 </div>
 </body>
 </html>
